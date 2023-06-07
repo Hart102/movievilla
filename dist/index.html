@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/index.5b8185d3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    <style>html, body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  color: #000;
+  background: #eee;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+swiper-slide img {
+  width: 100%;
+  display: block;
+}
+
+@media only screen and (min-width: 769px) {
+  swiper-slide:first-child {
+    transition: transform .1s;
+  }
+
+  swiper-slide:first-child img {
+    transition: box-shadow .5s;
+  }
+
+  swiper-slide.swiper-slide-active:first-child {
+    z-index: 2;
+    transform: translateX(50%);
+  }
+
+  swiper-slide.swiper-slide-active:first-child img {
+    box-shadow: 0 32px 80px #00000059;
+  }
+
+  swiper-slide:nth-child(2) {
+    transition: transform .1s;
+  }
+
+  swiper-slide.swiper-slide-next:nth-child(2) {
+    z-index: 1;
+    transform: translateX(55%);
+  }
+
+  swiper-container[dir="rtl"] swiper-slide.swiper-slide-active:first-child {
+    transform: translateX(-50%);
+  }
+
+  swiper-container[dir="rtl"] swiper-slide.swiper-slide-next:nth-child(2) {
+    transform: translateX(-55%);
+  }
+}
+
+</style>
+  </head>
+
+  <body>
+     <!-- Header  -->
+ <header class="bg-headerbg relative sticky top-0 w-full flex flex-col lg:flex-row px-[2.5rem] z-50">
+    <section class="w-full space-x-6 flex align-items-center justify-between px-3 z-50 lg:w-[10%]">
+        <div class="inline-block my-auto" id="hamburger"><img src="/Icon.45570aca.png" class="inline-block"></div>
+        <div class="inline-block"><img src="/Logo.fe4acfbf.svg" class="inline-block"></div>
+    </section>
+
+    <section class="container px-5 hidden mx-auto bg-headerbg absolute top-[100%] left-0 right-0 ease-in-out duration-300 lg:flex flex-col justify-between lg:flex-row lg:relative lg:-left-[0] lg:px-0 z-30" id="menu">
+        <nav class="w-full px-5 lg:w-[50%]s space-x-6 lg:px-5 flex flex-col lg:flex-row">
+            <section class="my-auto space-y-6 py-3 flex flex-col lg:space-y-0 lg:flex-row lg:space-x-6 lg:py-0">
+                <a href="#" class="text-white text-sm font-light px-2 rounded-full hover:bg-gray-500">Movies <img src="/Vector.a90cf0f3.png" class="inline-block"></a>
+                <a href="#" class="text-white text-sm font-light px-2 rounded-full hover:bg-gray-500">TvShow <img src="/Vector.a90cf0f3.png" class="inline-block"></a>
+                <a href="#" class="text-white text-sm font-light px-2 rounded-full hover:bg-gray-500">Genre <img src="/Vector.a90cf0f3.png" class="inline-block"></a>
+                <a href="#" class="text-white text-sm font-light px-2 rounded-full hover:bg-gray-500">Web series <img src="/Vector.a90cf0f3.png" class="inline-block"></a>
+                <a href="#" class="text-white text-sm font-light px-2 rounded-full hover:bg-gray-500">Anime <img src="/Vector.a90cf0f3.png" class="inline-block"></a>
+            </section>
+        </nav>
+        <nav class="w-full px-[1.8em] py-4 lg:w-[50%]s space-x-6 flex flex-col lg:px-0 lg:flex-row lg:py-4">
+            <form class="flex flex-col space-y-6 align-items-baseline justify-around w-full lg:space-y-0 lg:flex-row">
+                <section class="flex align-items-center justify-between border-b-[1px]">
+                    <input type="search" class="bg-transparent border-0 outline-0 text-white text-sm" placeholder="search">
+                    <span class="my-auto"><img src="/search.829ed091.png" alt="searchIcon"></span>
+                </section>
+                <div class="flex"><a href="#" class="text-white my-auto text-sm font-light border-[1px] rounded-full py-1 px-3">Subscribe</a></div>
+                <div class="flex"><a href="#" class="text-white text-sm my-auto px-2 rounded-full hover:bg-gray-500">LOG IN</a></div>
+            </form>
+        </nav>
+    </section>
+</header>
+    <section class="relative w-full h-[50vh] lg:h-[80vh]">
+    <img src="/underground.6d137a7a.png" class="w-full h-full" alt="Image">
+    <div class="absolute top-0 w-full h-full bg-overlay"></div>
+</section>
+    <section class="bg-headerbg">
+    <div class="container mx-auto p-5">
+        <article class="py-[5.5rem]">
+    <div class="px-5">
+        <div class="w-full flex justify-between align-items-center text-white lg:pr-[3.5rem]">
+    <h3 class="text-1xl font-bold lg:text-3xl">latest and trending</h3>
+    <p class="font-light text-base self-center cursor-pointer hover:underline">View all</p>
+</div>
+    </div>
+
+    <swiper-container class="mySwiper" init="false">
+        <div class="swiper-slide">
+            <article class="py-5 text-gray-500 mx-">
+                <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] relative">
+                    <img src="/india1.c2692963.png" class="w-[200px] rounded-2xl absolute">
+                </div>
+                <div class="px-2 mx-auto capitalize">
+                    <p class="text-gray-500">USA, 2016-Current</p>
+                    <p class="text-white font-bold my-1">stranger Things</p>
+                    <p>Action, <br> Adventure, <br> Horror</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-slide">
+            <article class="py-5 text-gray-500">
+                <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] relative">
+                    <img src="/india2.f6d5031f.png" class="w-[200px] lg:w-[200px] rounded-2xl absolute">
+                </div>
+                <div class="px-2 mx-auto capitalize">
+                    <p class="text-gray-500">USA, 2018-Current</p>
+                    <p class="text-white font-bold my-1">Batman Begin</p>
+                    <p>Action, Thriller</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-slide">
+            <article class="py-5 text-gray-500">
+                <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] relative">
+                    <img src="/india3.8e6af94b.png" class="w-[200px] rounded-2xl absolute">
+                </div>
+                <div class="px-2 mx-auto capitalize">
+                    <p class="text-gray-500">USA, 2019</p>
+                    <p class="text-white font-bold my-1">Spider-man into the spider verse</p>
+                    <p>Action, Thriller</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-slide">
+            <article class="py-5 text-gray-500">
+                <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] relative">
+                    <img src="/india4.52d66559.png" class="w-[200px] rounded-2xl absolute">
+                </div>
+                <div class="px-2 mx-auto capitalize">
+                    <p class="text-gray-500">USA, 2020</p>
+                    <p class="text-white font-bold my-1">shang-chi lengend of the ten Rign</p>
+                    <p>Action</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-slide">
+            <article class="py-5 text-gray-500">
+                <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] relative">
+                    <img src="/india5.605b3411.png" class="w-[200px] rounded-2xl absolute">
+                </div>
+                <div class="px-2 mx-auto capitalize">
+                    <p class="text-gray-500">USA, 2021</p>
+                    <p class="text-white font-bold my-1">Duno</p>
+                    <p>Action, Thriller</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-slide">
+            <article class="py-5 text-gray-500 mx-5">
+                <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] relative">
+                    <img src="/india1.c2692963.png" class="w-[200px] rounded-2xl absolute">
+                </div>
+                <div class="px-2 mx-auto capitalize">
+                    <p class="text-gray-500">USA, 2016-Current</p>
+                    <p class="text-white font-bold my-1">stranger Things</p>
+                    <p>Action, <br> Adventure, <br> Horror</p>
+                </div>
+            </article>
+        </div>
+    </swiper-container>
+</article>
+        <article class="py-[2rem]">
+    <div class="w-full flex justify-between align-items-center text-white lg:pr-[3.5rem]">
+    <h3 class="text-1xl font-bold lg:text-3xl">Bollywood</h3>
+    <p class="font-light text-base self-center cursor-pointer hover:underline">View all</p>
+</div>
+    <section class="grid grid-cols-2 lg:grid-cols-5 gap-2">
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/india1.c2692963.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016-Current</p>
+                <p class="text-white font-bold my-1">stranger Things</p>
+                <p>Action, <br> Adventure, <br> Horro</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/india2.f6d5031f.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016-Current</p>
+                <p class="text-white font-bold my-1">stranger Things</p>
+                <p>Action, <br> Adventure, <br> Horro</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/india3.8e6af94b.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016-Current</p>
+                <p class="text-white font-bold my-1">stranger Things</p>
+                <p>Action, <br> Adventure, <br> Horro</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/india4.52d66559.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016-Current</p>
+                <p class="text-white font-bold my-1">stranger Things</p>
+                <p>Action, <br> Adventure, <br> Horro</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/india5.605b3411.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016-Current</p>
+                <p class="text-white font-bold my-1">stranger Things</p>
+                <p>Action, <br> Adventure, <br> Horro</p>
+            </div>
+        </article>
+    </section>
+</article>
+        <article class="py-[2rem]">
+    <div class="w-full flex justify-between align-items-center text-white lg:pr-[3.5rem]">
+    <h3 class="text-1xl font-bold lg:text-3xl">Hollywood</h3>
+    <p class="font-light text-base self-center cursor-pointer hover:underline">View all</p>
+</div>
+    <section class="grid grid-cols-2 lg:grid-cols-5 gap-2">
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/holly1.7b3a27e5.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016-Current</p>
+                <p class="text-white font-bold my-1">dunkrik</p>
+                <p>Adventure</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/holl2.b49643f8.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2020-Current</p>
+                <p class="text-white font-bold my-1">no time to die</p>
+                <p>Adventure Action</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/holl3.11b2225c.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2019-Current</p>
+                <p class="text-white font-bold my-1">avengers-Endgame</p>
+                <p>Action</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/holl4.593beeaa.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016</p>
+                <p class="text-white font-bold my-1">the outpost</p>
+                <p>Adventure,Action</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/holl5.a5195a17.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2021</p>
+                <p class="text-white font-bold my-1">don't breath</p>
+                <p>Action,Thriller</p>
+            </div>
+        </article>
+    </section>
+</article>
+        <article class="py-[2rem]">
+    <div class="w-full flex justify-between align-items-center text-white lg:pr-[3.5rem]">
+    <h3 class="text-1xl font-bold lg:text-3xl">Web Series</h3>
+    <p class="font-light text-base self-center cursor-pointer hover:underline">View all</p>
+</div>
+
+    <section class="grid grid-cols-2 lg:grid-cols-5 gap-2 my-5">
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/india1.c2692963.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016-Current</p>
+                <p class="text-white font-bold my-1">tedbundy tapes</p>
+                <p>Adventure,action</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/india2.f6d5031f.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016-Current</p>
+                <p class="text-white font-bold my-1">sherlock</p>
+                <p>Adventure,Action</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/india3.8e6af94b.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">india, 2020-current</p>
+                <p class="text-white font-bold my-1">live-Telecast</p>
+                <p>Adventure,Action,Thriller</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/india4.52d66559.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">India, 2020-Current</p>
+                <p class="text-white font-bold my-1">the fame game</p>
+                <p>adventure,Action</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/india5.605b3411.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">India, 2019-current</p>
+                <p class="text-white font-bold my-1">mirzapur</p>
+                <p>adventure,Action</p>
+            </div>
+        </article>
+    </section>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <article class="py-[2rem]">
+    <module href="/components/title.html" locals='{"title": "Web Series"}'></module>
+    <section class="grid grid-cols-2 lg:grid-cols-5 gap-2">
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="../assets/img/india1.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016-Current</p>
+                <p class="text-white font-bold my-1">stranger Things</p>
+                <p>Action, <br> Adventure, <br> Horro</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="../assets/img/india2.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016-Current</p>
+                <p class="text-white font-bold my-1">stranger Things</p>
+                <p>Action, <br> Adventure, <br> Horro</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="../assets/img/india3.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016-Current</p>
+                <p class="text-white font-bold my-1">stranger Things</p>
+                <p>Action, <br> Adventure, <br> Horro</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="../assets/img/india4.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016-Current</p>
+                <p class="text-white font-bold my-1">stranger Things</p>
+                <p>Action, <br> Adventure, <br> Horro</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="../assets/img/india5.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">USA, 2016-Current</p>
+                <p class="text-white font-bold my-1">stranger Things</p>
+                <p>Action, <br> Adventure, <br> Horro</p>
+            </div>
+        </article>
+    </section>
+</article> -->
+        <article class="py-[2rem]">
+    <div class="w-full flex justify-between align-items-center text-white lg:pr-[3.5rem]">
+    <h3 class="text-1xl font-bold lg:text-3xl">Anime</h3>
+    <p class="font-light text-base self-center cursor-pointer hover:underline">View all</p>
+</div>
+
+    <section class="grid grid-cols-2 lg:grid-cols-5 gap-2 my-5">
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/anim1.d4bd16fd.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">japan, 2016-Current</p>
+                <p class="text-white font-bold my-1">dragon ball z</p>
+                <p>action</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/anim2.3909ffad.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">India, 2017-Current</p>
+                <p class="text-white font-bold my-1">death note</p>
+                <p>Action</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/anim3.f43aa742.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">india, 2020-current</p>
+                <p class="text-white font-bold my-1">one punch man</p>
+                <p>Adventure</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/anim4.ebca2836.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">India, 2015-Current</p>
+                <p class="text-white font-bold my-1">avater</p>
+                <p>Action</p>
+            </div>
+        </article>
+        <article class="py-5 text-gray-500">
+            <div class="w-[300px] h-[300px] lg:w-[180px] lg:h-[200.68px] lg:mb-[3rem] mb-[5rem] relative">
+                <img src="/anim5.db3c2a61.png" class="w-full rounded-2xl">
+            </div>
+            <div class="px-2 mx-auto capitalize">
+                <p class="text-gray-500">India, 2018-current</p>
+                <p class="text-white font-bold my-1">naruto</p>
+                <p>Action</p>
+            </div>
+        </article>
+    </section>
+</article>
+    </div>
+</section>
+
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+    <script>// modules are defined as an array
+// [ module function, map of requires ]
+//
+// map of requires is short require name -> numeric require
+//
+// anything defined in a previous bundle is accessed via the
+// orig method which is the require for previous bundles
+
+(function (modules, entry, mainEntry, parcelRequireName, globalName) {
+  /* eslint-disable no-undef */
+  var globalObject =
+    typeof globalThis !== 'undefined'
+      ? globalThis
+      : typeof self !== 'undefined'
+      ? self
+      : typeof window !== 'undefined'
+      ? window
+      : typeof global !== 'undefined'
+      ? global
+      : {};
+  /* eslint-enable no-undef */
+
+  // Save the require from previous bundle to this closure if any
+  var previousRequire =
+    typeof globalObject[parcelRequireName] === 'function' &&
+    globalObject[parcelRequireName];
+
+  var cache = previousRequire.cache || {};
+  // Do not use `require` to prevent Webpack from trying to bundle this call
+  var nodeRequire =
+    typeof module !== 'undefined' &&
+    typeof module.require === 'function' &&
+    module.require.bind(module);
+
+  function newRequire(name, jumped) {
+    if (!cache[name]) {
+      if (!modules[name]) {
+        // if we cannot find the module within our internal map or
+        // cache jump to the current global require ie. the last bundle
+        // that was added to the page.
+        var currentRequire =
+          typeof globalObject[parcelRequireName] === 'function' &&
+          globalObject[parcelRequireName];
+        if (!jumped && currentRequire) {
+          return currentRequire(name, true);
+        }
+
+        // If there are other bundles on this page the require from the
+        // previous one is saved to 'previousRequire'. Repeat this as
+        // many times as there are bundles until the module is found or
+        // we exhaust the require chain.
+        if (previousRequire) {
+          return previousRequire(name, true);
+        }
+
+        // Try the node require function if it exists.
+        if (nodeRequire && typeof name === 'string') {
+          return nodeRequire(name);
+        }
+
+        var err = new Error("Cannot find module '" + name + "'");
+        err.code = 'MODULE_NOT_FOUND';
+        throw err;
+      }
+
+      localRequire.resolve = resolve;
+      localRequire.cache = {};
+
+      var module = (cache[name] = new newRequire.Module(name));
+
+      modules[name][0].call(
+        module.exports,
+        localRequire,
+        module,
+        module.exports,
+        this
+      );
+    }
+
+    return cache[name].exports;
+
+    function localRequire(x) {
+      var res = localRequire.resolve(x);
+      return res === false ? {} : newRequire(res);
+    }
+
+    function resolve(x) {
+      var id = modules[name][1][x];
+      return id != null ? id : x;
+    }
+  }
+
+  function Module(moduleName) {
+    this.id = moduleName;
+    this.bundle = newRequire;
+    this.exports = {};
+  }
+
+  newRequire.isParcelRequire = true;
+  newRequire.Module = Module;
+  newRequire.modules = modules;
+  newRequire.cache = cache;
+  newRequire.parent = previousRequire;
+  newRequire.register = function (id, exports) {
+    modules[id] = [
+      function (require, module) {
+        module.exports = exports;
+      },
+      {},
+    ];
+  };
+
+  Object.defineProperty(newRequire, 'root', {
+    get: function () {
+      return globalObject[parcelRequireName];
+    },
+  });
+
+  globalObject[parcelRequireName] = newRequire;
+
+  for (var i = 0; i < entry.length; i++) {
+    newRequire(entry[i]);
+  }
+
+  if (mainEntry) {
+    // Expose entry point to Node, AMD or browser globals
+    // Based on https://github.com/ForbesLindesay/umd/blob/master/template.js
+    var mainExports = newRequire(mainEntry);
+
+    // CommonJS
+    if (typeof exports === 'object' && typeof module !== 'undefined') {
+      module.exports = mainExports;
+
+      // RequireJS
+    } else if (typeof define === 'function' && define.amd) {
+      define(function () {
+        return mainExports;
+      });
+
+      // <script>
+    } else if (globalName) {
+      this[globalName] = mainExports;
+    }
+  }
+})({"hnK7o":[function(require,module,exports) {
+"use strict";
+var global = arguments[3];
+var HMR_HOST = null;
+var HMR_PORT = null;
+var HMR_SECURE = false;
+var HMR_ENV_HASH = "d6ea1d42532a7575";
+module.bundle.HMR_BUNDLE_ID = "6345fab17e752674";
+/* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
+import type {
+  HMRAsset,
+  HMRMessage,
+} from '@parcel/reporter-dev-server/src/HMRServer.js';
+interface ParcelRequire {
+  (string): mixed;
+  cache: {|[string]: ParcelModule|};
+  hotData: mixed;
+  Module: any;
+  parent: ?ParcelRequire;
+  isParcelRequire: true;
+  modules: {|[string]: [Function, {|[string]: string|}]|};
+  HMR_BUNDLE_ID: string;
+  root: ParcelRequire;
+}
+interface ParcelModule {
+  hot: {|
+    data: mixed,
+    accept(cb: (Function) => void): void,
+    dispose(cb: (mixed) => void): void,
+    // accept(deps: Array<string> | string, cb: (Function) => void): void,
+    // decline(): void,
+    _acceptCallbacks: Array<(Function) => void>,
+    _disposeCallbacks: Array<(mixed) => void>,
+  |};
+}
+interface ExtensionContext {
+  runtime: {|
+    reload(): void,
+    getURL(url: string): string;
+    getManifest(): {manifest_version: number, ...};
+  |};
+}
+declare var module: {bundle: ParcelRequire, ...};
+declare var HMR_HOST: string;
+declare var HMR_PORT: string;
+declare var HMR_ENV_HASH: string;
+declare var HMR_SECURE: boolean;
+declare var chrome: ExtensionContext;
+declare var browser: ExtensionContext;
+declare var __parcel__import__: (string) => Promise<void>;
+declare var __parcel__importScripts__: (string) => Promise<void>;
+declare var globalThis: typeof self;
+declare var ServiceWorkerGlobalScope: Object;
+*/ var OVERLAY_ID = "__parcel__error__overlay__";
+var OldModule = module.bundle.Module;
+function Module(moduleName) {
+    OldModule.call(this, moduleName);
+    this.hot = {
+        data: module.bundle.hotData,
+        _acceptCallbacks: [],
+        _disposeCallbacks: [],
+        accept: function(fn) {
+            this._acceptCallbacks.push(fn || function() {});
+        },
+        dispose: function(fn) {
+            this._disposeCallbacks.push(fn);
+        }
+    };
+    module.bundle.hotData = undefined;
+}
+module.bundle.Module = Module;
+var checkedAssets, acceptedAssets, assetsToAccept /*: Array<[ParcelRequire, string]> */ ;
+function getHostname() {
+    return HMR_HOST || (location.protocol.indexOf("http") === 0 ? location.hostname : "localhost");
+}
+function getPort() {
+    return HMR_PORT || location.port;
+} // eslint-disable-next-line no-redeclare
+var parent = module.bundle.parent;
+if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
+    var hostname = getHostname();
+    var port = getPort();
+    var protocol = HMR_SECURE || location.protocol == "https:" && !/localhost|127.0.0.1|0.0.0.0/.test(hostname) ? "wss" : "ws";
+    var ws = new WebSocket(protocol + "://" + hostname + (port ? ":" + port : "") + "/"); // Web extension context
+    var extCtx = typeof chrome === "undefined" ? typeof browser === "undefined" ? null : browser : chrome; // Safari doesn't support sourceURL in error stacks.
+    // eval may also be disabled via CSP, so do a quick check.
+    var supportsSourceURL = false;
+    try {
+        (0, eval)('throw new Error("test"); //# sourceURL=test.js');
+    } catch (err) {
+        supportsSourceURL = err.stack.includes("test.js");
+    } // $FlowFixMe
+    ws.onmessage = async function(event) {
+        checkedAssets = {} /*: {|[string]: boolean|} */ ;
+        acceptedAssets = {} /*: {|[string]: boolean|} */ ;
+        assetsToAccept = [];
+        var data = JSON.parse(event.data);
+        if (data.type === "update") {
+            // Remove error overlay if there is one
+            if (typeof document !== "undefined") removeErrorOverlay();
+            let assets = data.assets.filter((asset)=>asset.envHash === HMR_ENV_HASH); // Handle HMR Update
+            let handled = assets.every((asset)=>{
+                return asset.type === "css" || asset.type === "js" && hmrAcceptCheck(module.bundle.root, asset.id, asset.depsByBundle);
+            });
+            if (handled) {
+                console.clear(); // Dispatch custom event so other runtimes (e.g React Refresh) are aware.
+                if (typeof window !== "undefined" && typeof CustomEvent !== "undefined") window.dispatchEvent(new CustomEvent("parcelhmraccept"));
+                await hmrApplyUpdates(assets);
+                for(var i = 0; i < assetsToAccept.length; i++){
+                    var id = assetsToAccept[i][1];
+                    if (!acceptedAssets[id]) hmrAcceptRun(assetsToAccept[i][0], id);
+                }
+            } else fullReload();
+        }
+        if (data.type === "error") {
+            // Log parcel errors to console
+            for (let ansiDiagnostic of data.diagnostics.ansi){
+                let stack = ansiDiagnostic.codeframe ? ansiDiagnostic.codeframe : ansiDiagnostic.stack;
+                console.error("\uD83D\uDEA8 [parcel]: " + ansiDiagnostic.message + "\n" + stack + "\n\n" + ansiDiagnostic.hints.join("\n"));
+            }
+            if (typeof document !== "undefined") {
+                // Render the fancy html overlay
+                removeErrorOverlay();
+                var overlay = createErrorOverlay(data.diagnostics.html); // $FlowFixMe
+                document.body.appendChild(overlay);
+            }
+        }
+    };
+    ws.onerror = function(e) {
+        console.error(e.message);
+    };
+    ws.onclose = function() {
+        console.warn("[parcel] \uD83D\uDEA8 Connection to the HMR server was lost");
+    };
+}
+function removeErrorOverlay() {
+    var overlay = document.getElementById(OVERLAY_ID);
+    if (overlay) {
+        overlay.remove();
+        console.log("[parcel] ✨ Error resolved");
+    }
+}
+function createErrorOverlay(diagnostics) {
+    var overlay = document.createElement("div");
+    overlay.id = OVERLAY_ID;
+    let errorHTML = '<div style="background: black; opacity: 0.85; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; font-family: Menlo, Consolas, monospace; z-index: 9999;">';
+    for (let diagnostic of diagnostics){
+        let stack = diagnostic.frames.length ? diagnostic.frames.reduce((p, frame)=>{
+            return `${p}
+<a href="/__parcel_launch_editor?file=${encodeURIComponent(frame.location)}" style="text-decoration: underline; color: #888" onclick="fetch(this.href); return false">${frame.location}</a>
+${frame.code}`;
+        }, "") : diagnostic.stack;
+        errorHTML += `
+      <div>
+        <div style="font-size: 18px; font-weight: bold; margin-top: 20px;">
+          🚨 ${diagnostic.message}
+        </div>
+        <pre>${stack}</pre>
+        <div>
+          ${diagnostic.hints.map((hint)=>"<div>\uD83D\uDCA1 " + hint + "</div>").join("")}
+        </div>
+        ${diagnostic.documentation ? `<div>📝 <a style="color: violet" href="${diagnostic.documentation}" target="_blank">Learn more</a></div>` : ""}
+      </div>
+    `;
+    }
+    errorHTML += "</div>";
+    overlay.innerHTML = errorHTML;
+    return overlay;
+}
+function fullReload() {
+    if ("reload" in location) location.reload();
+    else if (extCtx && extCtx.runtime && extCtx.runtime.reload) extCtx.runtime.reload();
+}
+function getParents(bundle, id) /*: Array<[ParcelRequire, string]> */ {
+    var modules = bundle.modules;
+    if (!modules) return [];
+    var parents = [];
+    var k, d, dep;
+    for(k in modules)for(d in modules[k][1]){
+        dep = modules[k][1][d];
+        if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) parents.push([
+            bundle,
+            k
+        ]);
+    }
+    if (bundle.parent) parents = parents.concat(getParents(bundle.parent, id));
+    return parents;
+}
+function updateLink(link) {
+    var newLink = link.cloneNode();
+    newLink.onload = function() {
+        if (link.parentNode !== null) // $FlowFixMe
+        link.parentNode.removeChild(link);
+    };
+    newLink.setAttribute("href", link.getAttribute("href").split("?")[0] + "?" + Date.now()); // $FlowFixMe
+    link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+var cssTimeout = null;
+function reloadCSS() {
+    if (cssTimeout) return;
+    cssTimeout = setTimeout(function() {
+        var links = document.querySelectorAll('link[rel="stylesheet"]');
+        for(var i = 0; i < links.length; i++){
+            // $FlowFixMe[incompatible-type]
+            var href = links[i].getAttribute("href");
+            var hostname = getHostname();
+            var servedFromHMRServer = hostname === "localhost" ? new RegExp("^(https?:\\/\\/(0.0.0.0|127.0.0.1)|localhost):" + getPort()).test(href) : href.indexOf(hostname + ":" + getPort());
+            var absolute = /^https?:\/\//i.test(href) && href.indexOf(location.origin) !== 0 && !servedFromHMRServer;
+            if (!absolute) updateLink(links[i]);
+        }
+        cssTimeout = null;
+    }, 50);
+}
+function hmrDownload(asset) {
+    if (asset.type === "js") {
+        if (typeof document !== "undefined") {
+            let script = document.createElement("script");
+            script.src = asset.url + "?t=" + Date.now();
+            if (asset.outputFormat === "esmodule") script.type = "module";
+            return new Promise((resolve, reject)=>{
+                var _document$head;
+                script.onload = ()=>resolve(script);
+                script.onerror = reject;
+                (_document$head = document.head) === null || _document$head === void 0 || _document$head.appendChild(script);
+            });
+        } else if (typeof importScripts === "function") {
+            // Worker scripts
+            if (asset.outputFormat === "esmodule") return import(asset.url + "?t=" + Date.now());
+            else return new Promise((resolve, reject)=>{
+                try {
+                    importScripts(asset.url + "?t=" + Date.now());
+                    resolve();
+                } catch (err) {
+                    reject(err);
+                }
+            });
+        }
+    }
+}
+async function hmrApplyUpdates(assets) {
+    global.parcelHotUpdate = Object.create(null);
+    let scriptsToRemove;
+    try {
+        // If sourceURL comments aren't supported in eval, we need to load
+        // the update from the dev server over HTTP so that stack traces
+        // are correct in errors/logs. This is much slower than eval, so
+        // we only do it if needed (currently just Safari).
+        // https://bugs.webkit.org/show_bug.cgi?id=137297
+        // This path is also taken if a CSP disallows eval.
+        if (!supportsSourceURL) {
+            let promises = assets.map((asset)=>{
+                var _hmrDownload;
+                return (_hmrDownload = hmrDownload(asset)) === null || _hmrDownload === void 0 ? void 0 : _hmrDownload.catch((err)=>{
+                    // Web extension bugfix for Chromium
+                    // https://bugs.chromium.org/p/chromium/issues/detail?id=1255412#c12
+                    if (extCtx && extCtx.runtime && extCtx.runtime.getManifest().manifest_version == 3) {
+                        if (typeof ServiceWorkerGlobalScope != "undefined" && global instanceof ServiceWorkerGlobalScope) {
+                            extCtx.runtime.reload();
+                            return;
+                        }
+                        asset.url = extCtx.runtime.getURL("/__parcel_hmr_proxy__?url=" + encodeURIComponent(asset.url + "?t=" + Date.now()));
+                        return hmrDownload(asset);
+                    }
+                    throw err;
+                });
+            });
+            scriptsToRemove = await Promise.all(promises);
+        }
+        assets.forEach(function(asset) {
+            hmrApply(module.bundle.root, asset);
+        });
+    } finally{
+        delete global.parcelHotUpdate;
+        if (scriptsToRemove) scriptsToRemove.forEach((script)=>{
+            if (script) {
+                var _document$head2;
+                (_document$head2 = document.head) === null || _document$head2 === void 0 || _document$head2.removeChild(script);
+            }
+        });
+    }
+}
+function hmrApply(bundle, asset) {
+    var modules = bundle.modules;
+    if (!modules) return;
+    if (asset.type === "css") reloadCSS();
+    else if (asset.type === "js") {
+        let deps = asset.depsByBundle[bundle.HMR_BUNDLE_ID];
+        if (deps) {
+            if (modules[asset.id]) {
+                // Remove dependencies that are removed and will become orphaned.
+                // This is necessary so that if the asset is added back again, the cache is gone, and we prevent a full page reload.
+                let oldDeps = modules[asset.id][1];
+                for(let dep in oldDeps)if (!deps[dep] || deps[dep] !== oldDeps[dep]) {
+                    let id = oldDeps[dep];
+                    let parents = getParents(module.bundle.root, id);
+                    if (parents.length === 1) hmrDelete(module.bundle.root, id);
+                }
+            }
+            if (supportsSourceURL) // Global eval. We would use `new Function` here but browser
+            // support for source maps is better with eval.
+            (0, eval)(asset.output);
+             // $FlowFixMe
+            let fn = global.parcelHotUpdate[asset.id];
+            modules[asset.id] = [
+                fn,
+                deps
+            ];
+        } else if (bundle.parent) hmrApply(bundle.parent, asset);
+    }
+}
+function hmrDelete(bundle, id) {
+    let modules = bundle.modules;
+    if (!modules) return;
+    if (modules[id]) {
+        // Collect dependencies that will become orphaned when this module is deleted.
+        let deps = modules[id][1];
+        let orphans = [];
+        for(let dep in deps){
+            let parents = getParents(module.bundle.root, deps[dep]);
+            if (parents.length === 1) orphans.push(deps[dep]);
+        } // Delete the module. This must be done before deleting dependencies in case of circular dependencies.
+        delete modules[id];
+        delete bundle.cache[id]; // Now delete the orphans.
+        orphans.forEach((id)=>{
+            hmrDelete(module.bundle.root, id);
+        });
+    } else if (bundle.parent) hmrDelete(bundle.parent, id);
+}
+function hmrAcceptCheck(bundle, id, depsByBundle) {
+    if (hmrAcceptCheckOne(bundle, id, depsByBundle)) return true;
+     // Traverse parents breadth first. All possible ancestries must accept the HMR update, or we'll reload.
+    let parents = getParents(module.bundle.root, id);
+    let accepted = false;
+    while(parents.length > 0){
+        let v = parents.shift();
+        let a = hmrAcceptCheckOne(v[0], v[1], null);
+        if (a) // If this parent accepts, stop traversing upward, but still consider siblings.
+        accepted = true;
+        else {
+            // Otherwise, queue the parents in the next level upward.
+            let p = getParents(module.bundle.root, v[1]);
+            if (p.length === 0) {
+                // If there are no parents, then we've reached an entry without accepting. Reload.
+                accepted = false;
+                break;
+            }
+            parents.push(...p);
+        }
+    }
+    return accepted;
+}
+function hmrAcceptCheckOne(bundle, id, depsByBundle) {
+    var modules = bundle.modules;
+    if (!modules) return;
+    if (depsByBundle && !depsByBundle[bundle.HMR_BUNDLE_ID]) {
+        // If we reached the root bundle without finding where the asset should go,
+        // there's nothing to do. Mark as "accepted" so we don't reload the page.
+        if (!bundle.parent) return true;
+        return hmrAcceptCheck(bundle.parent, id, depsByBundle);
+    }
+    if (checkedAssets[id]) return true;
+    checkedAssets[id] = true;
+    var cached = bundle.cache[id];
+    assetsToAccept.push([
+        bundle,
+        id
+    ]);
+    if (!cached || cached.hot && cached.hot._acceptCallbacks.length) return true;
+}
+function hmrAcceptRun(bundle, id) {
+    var cached = bundle.cache[id];
+    bundle.hotData = {};
+    if (cached && cached.hot) cached.hot.data = bundle.hotData;
+    if (cached && cached.hot && cached.hot._disposeCallbacks.length) cached.hot._disposeCallbacks.forEach(function(cb) {
+        cb(bundle.hotData);
+    });
+    delete bundle.cache[id];
+    bundle(id);
+    cached = bundle.cache[id];
+    if (cached && cached.hot && cached.hot._acceptCallbacks.length) cached.hot._acceptCallbacks.forEach(function(cb) {
+        var assetsToAlsoAccept = cb(function() {
+            return getParents(module.bundle.root, id);
+        });
+        if (assetsToAlsoAccept && assetsToAccept.length) // $FlowFixMe[method-unbinding]
+        assetsToAccept.push.apply(assetsToAccept, assetsToAlsoAccept);
+    });
+    acceptedAssets[id] = true;
+}
+
+},{}],"lbMbR":[function(require,module,exports) {
+const selector = (element)=>document.querySelector(element);
+const hamburger_function = (element)=>{
+    if (element.classList.contains("hidden")) return element.classList.remove("hidden");
+    return element.classList.add("hidden");
+};
+selector("#hamburger").addEventListener("click", ()=>hamburger_function(selector("#menu")));
+const swiperEl = document.querySelector("swiper-container");
+const params = {
+    centeredSlides: false,
+    slidesPerGroupSkip: 1,
+    grabCursor: true,
+    keyboard: {
+        enabled: true
+    },
+    breakpoints: {
+        769: {
+            slidesPerView: 5,
+            slidesPerGroup: 5
+        }
+    },
+    scrollbar: false,
+    navigation: true,
+    pagination: {
+        clickable: true
+    }
+};
+Object.assign(swiperEl, params);
+swiperEl.initialize();
+
+},{}]},["hnK7o","lbMbR"], "lbMbR", "parcelRequire212c")
+
+</script>
+  </body>
+</html>
+
+
